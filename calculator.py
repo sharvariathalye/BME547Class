@@ -1,3 +1,8 @@
+a = input("Enter the first number: ")
+x = int(a) 
+b = input("Enter the second number: ")
+y = int(b)
+
 def add(a, b):
     c = a + b
     return c, "+"
@@ -15,8 +20,8 @@ def divide(a,b):
     return c , "/"
 
 if __name__ == "__main__":
-    a = 47
-    b = 7
+    a = x
+    b = y
     answer, symbol = add(a, b)
     print("{} {} {} = {}".format(a, symbol, b, answer))
     answer, symbol = subtract(a, b)
